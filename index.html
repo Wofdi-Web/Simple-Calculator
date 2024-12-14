@@ -7,7 +7,34 @@
     <title>Calculator</title>
 </head>
 <body>
+    <main>
+        <div class="container">
+            <div id="calculator" class="calculator">
+                <input id="display" readonly>
 
+                <div id="buttons" class="buttonsWrapper">
+                    <button onclick="appendDisplay('+')" class="operatorBtn">+</button>
+                    <button onclick="appendDisplay('7')">7</button>
+                    <button onclick="appendDisplay('8')">8</button>
+                    <button onclick="appendDisplay('9')">9</button>
+                    <button onclick="appendDisplay('-')" class="operatorBtn">-</button>
+                    <button onclick="appendDisplay('4')">4</button>
+                    <button onclick="appendDisplay('5')">5</button>
+                    <button onclick="appendDisplay('6')">6</button>
+                    <button onclick="appendDisplay('*')" class="operatorBtn">*</button>
+                    <button onclick="appendDisplay('1')">1</button>
+                    <button onclick="appendDisplay('2')">2</button>
+                    <button onclick="appendDisplay('3')">3</button>
+                    <button onclick="appendDisplay('/')" class="operatorBtn">/</button>
+                    <button onclick="appendDisplay('0')">0</button>
+                    <button onclick="appendDisplay('.')">.</button>
+
+                    <button onclick="calculate()">=</button>
+                    <button onclick="clearDisplay()" class="operatorBtn">C</button>
+                </div>
+            </div>
+        </div>   
+    </main>
     <script src="JS/script.js"></script>
 </body>
 </html>
